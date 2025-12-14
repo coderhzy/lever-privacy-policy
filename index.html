@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeverLess / 戒杠杆 - Privacy Policy / 隐私政策</title>
+    <style>
+        :root {
+            --bg: #0D0D0F;
+            --surface: #1A1A1E;
+            --primary: #6366F1;
+            --text: #E5E5E5;
+            --text-muted: #9CA3AF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #6366F1, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+
+        .lang-btn {
+            padding: 8px 20px;
+            border: 1px solid var(--primary);
+            border-radius: 20px;
+            background: transparent;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .lang-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .content {
+            background: var(--surface);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 20px;
+            margin: 30px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a2a2e;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: rgba(99, 102, 241, 0.1);
+            border-left: 3px solid var(--primary);
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+            color: var(--text);
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 12px;
+            padding: 20px 0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 10px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🛡️</div>
+            <h1>LeverLess / 戒杠杆</h1>
+            <p class="subtitle">Privacy Policy / 隐私政策</p>
+        </div>
+
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="showLang('zh')">中文</button>
+            <button class="lang-btn" onclick="showLang('en')">English</button>
+        </div>
+
+        <!-- Chinese Version -->
+        <div id="zh" class="content">
+            <h2>概述</h2>
+            <p>LeverLess（戒杠杆）是一款帮助加密货币杠杆交易成瘾者恢复的应用。我们非常重视您的隐私，本隐私政策说明了我们如何处理您的信息。</p>
+
+            <div class="highlight">
+                <p><strong>核心承诺：您的所有数据都存储在您的设备本地，我们不会收集、上传或分享您的任何个人信息。</strong></p>
+            </div>
+
+            <h2>数据存储</h2>
+            <p>本应用采用完全本地化的数据存储方式：</p>
+            <ul>
+                <li><strong>戒断开始日期</strong> - 存储在您的设备本地</li>
+                <li><strong>每日亏损金额设置</strong> - 存储在您的设备本地</li>
+                <li><strong>情绪日记记录</strong> - 存储在您的设备本地</li>
+                <li><strong>语言和货币偏好</strong> - 存储在您的设备本地</li>
+            </ul>
+            <p>所有数据使用 Hive 本地数据库存储，永远不会离开您的设备。</p>
+
+            <h2>权限使用</h2>
+            <p>本应用可能请求以下权限：</p>
+            <ul>
+                <li><strong>通知权限</strong> - 用于发送每日鼓励提醒，帮助您保持戒断动力。您可以随时在设置中关闭。</li>
+            </ul>
+
+            <h2>数据收集</h2>
+            <p>我们<strong>不会</strong>收集以下信息：</p>
+            <ul>
+                <li>个人身份信息（姓名、邮箱、电话等）</li>
+                <li>位置信息</li>
+                <li>设备标识符</li>
+                <li>使用行为数据</li>
+                <li>任何财务信息</li>
+            </ul>
+
+            <h2>第三方服务</h2>
+            <p>本应用不使用任何第三方分析、广告或追踪服务。</p>
+
+            <h2>数据删除</h2>
+            <p>您可以随时通过以下方式删除所有数据：</p>
+            <ul>
+                <li>在应用"设置"中选择"重置所有数据"</li>
+                <li>直接卸载应用</li>
+            </ul>
+
+            <h2>儿童隐私</h2>
+            <p>本应用不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。</p>
+
+            <h2>隐私政策更新</h2>
+            <p>如果我们更新隐私政策，将在此页面发布新版本。建议您定期查看本页面。</p>
+
+            <h2>联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+            <p>邮箱：<a href="mailto:support@leverless.app" style="color: var(--primary);">support@leverless.app</a></p>
+
+            <p style="margin-top: 30px; font-size: 12px;">最后更新：2024 年 12 月</p>
+        </div>
+
+        <!-- English Version -->
+        <div id="en" class="content hidden">
+            <h2>Overview</h2>
+            <p>LeverLess is an app designed to help cryptocurrency leverage trading addicts recover. We take your privacy seriously. This privacy policy explains how we handle your information.</p>
+
+            <div class="highlight">
+                <p><strong>Core Commitment: All your data is stored locally on your device. We do not collect, upload, or share any of your personal information.</strong></p>
+            </div>
+
+            <h2>Data Storage</h2>
+            <p>This app uses completely local data storage:</p>
+            <ul>
+                <li><strong>Recovery start date</strong> - Stored locally on your device</li>
+                <li><strong>Daily loss amount settings</strong> - Stored locally on your device</li>
+                <li><strong>Emotion journal entries</strong> - Stored locally on your device</li>
+                <li><strong>Language and currency preferences</strong> - Stored locally on your device</li>
+            </ul>
+            <p>All data is stored using the Hive local database and never leaves your device.</p>
+
+            <h2>Permissions</h2>
+            <p>This app may request the following permissions:</p>
+            <ul>
+                <li><strong>Notification Permission</strong> - Used to send daily encouragement reminders to help you stay motivated in your recovery. You can disable this at any time in Settings.</li>
+            </ul>
+
+            <h2>Data Collection</h2>
+            <p>We do <strong>NOT</strong> collect:</p>
+            <ul>
+                <li>Personal identification information (name, email, phone, etc.)</li>
+                <li>Location information</li>
+                <li>Device identifiers</li>
+                <li>Usage behavior data</li>
+                <li>Any financial information</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>This app does not use any third-party analytics, advertising, or tracking services.</p>
+
+            <h2>Data Deletion</h2>
+            <p>You can delete all your data at any time by:</p>
+            <ul>
+                <li>Selecting "Reset All Data" in the app Settings</li>
+                <li>Uninstalling the app</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>This app is not intended for children under 13 years of age. We do not knowingly collect personal information from children.</p>
+
+            <h2>Policy Updates</h2>
+            <p>If we update this privacy policy, we will post the new version on this page. We recommend checking this page periodically.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this privacy policy, please contact us at:</p>
+            <p>Email: <a href="mailto:support@leverless.app" style="color: var(--primary);">support@leverless.app</a></p>
+
+            <p style="margin-top: 30px; font-size: 12px;">Last Updated: December 2024</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 LeverLess. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.getElementById('zh').classList.toggle('hidden', lang !== 'zh');
+            document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(lang === 'zh' ? '中文' : 'English')) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Auto-detect browser language on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            // Check if browser language is Chinese (zh, zh-CN, zh-TW, zh-HK, etc.)
+            const isChineseUser = browserLang.toLowerCase().startsWith('zh');
+            showLang(isChineseUser ? 'zh' : 'en');
+        });
+    </script>
+</body>
+</html>
